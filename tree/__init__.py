@@ -14,5 +14,6 @@ def main(global_config, **settings):
     config.add_route('about', '/about/')
     config.add_route('signin', '/signin/')
     config.add_route('signup', '/signup/')
+    config.add_route('newsletter_signup', '/newsletter/signup/')
     config.scan()
     return config.make_wsgi_app()
